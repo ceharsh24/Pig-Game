@@ -1,7 +1,21 @@
 /**********************************************
 *** GENERAL
 **********************************************/
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
 
+}
+.final-score: :focus {outline: none;}
 * {
     margin: 0;
     padding: 0;
@@ -119,6 +133,7 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
 
@@ -138,6 +153,7 @@ i {
 }
 
 .btn-new { top: 45px;}
+.form-control-1{top: 100px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 

@@ -39,8 +39,15 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     if(gamePlaying){
         scores[activePlayer] += roundScore;
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
-    
-        if(scores[activePlayer]>=100){
+        var input = document.querySelector('.final-score').value;
+        var winingScore;
+        if(input){
+            winingScore = input;
+        }
+        else{
+            winingScore = 100; 
+        }
+        if(scores[activePlayer]>=winingScore){
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
